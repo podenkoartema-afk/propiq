@@ -12,6 +12,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .stApp { background: #f8f6f1; }
 header[data-testid="stHeader"] { display: none !important; }
 #MainMenu, footer { display: none !important; }
+[data-testid="stSidebar"], [data-testid="collapsedControl"] { display: none !important; }
 
 .login-wrap {
     max-width: 440px;

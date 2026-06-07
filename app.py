@@ -9,7 +9,7 @@ from dld_loader import (
     get_data_status,
 )
 
-st.set_page_config(page_title="PROPIQ", page_icon="🏙", layout="wide")
+st.set_page_config(page_title="PROPIQ", page_icon="🏙", layout="wide", initial_sidebar_state="collapsed")
 
 if "step" not in st.session_state:
     st.session_state.step = 0
@@ -44,6 +44,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 header[data-testid="stHeader"], #MainMenu, footer { display: none !important; }
+[data-testid="stSidebar"], [data-testid="collapsedControl"] { display: none !important; }
 input::placeholder { opacity: 1; }
 input[placeholder="Press Enter to submit form"] { display: none !important; }
 [data-testid="InputInstructions"] { display: none !important; }
